@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="jquery.bxslider.js"></script>
+  <link href="jquery.bxslider.css" rel="stylesheet" />
+   <script src="js-izb.js"></script>
+   <link rel="icon" type="image/x-icon" href="media/logo.ico">
+</head>
+<body>
+  <!-- Горизонательное меню-->
+  <header class=" fade-in-slider">
+    <nav class=" fade-in-title">
+      <div class="test-0-logo fade-in-title">
+        <p class="name">Flightpool</p>
+        <img src="media/logo.png" alt="Логотип">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a class="test-0-nav-1" href="#akzii">Акции</a></li>
+          <li><a class="test-0-nav-2" href="#poisk">Поиск</a></li>
+        </ul>
+      </div>
+      <div class="account-links">
+        <ul>
+          <li><a class="test-0-nav-4" href="login.html">Личный кабинет</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Секция -->
+  <section class="promt fade-in-title">
+   <h1 class="promt-title"> Доверие<br>
+    Нам доверяют по нескольким причинам:
+    <br> 1. Возможность выбрать удобное время поездки<br>2. Возможность накопить больше 50% бронирований на рейс.<br>3. Возможность получить снижение стоимости </h1>
+    <p class="promt-text">Мы ценим своих клиентов</p> 
+  </section>
+  <!-- Слайдер -->
+  <div class = "slider">
+    <ul class="bxslider">
+      <li><img src="media/images/1-2.jpg" class = "pic"></li>
+      <li><img src="media/images/aircrafts/960.jpg" class = "pic"></li>
+      <li><img src="media/images/aircrafts/airbus.jpg" class = "pic"></li>
+      <li><img src="media/images/aircrafts/CRJ-200-interior.jpg" class = "pic"></li>
+      <li><img src="media/images/aircrafts/96-963589_airbus-a320-wallpaper-airbus-a320-wallpaper-hd.jpg" class = "pic"></li>
+    </ul>
+  </div>
+
+  <!-- Скрипт для слайдера -->
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('.bxslider').bxSlider({
+        autoStart: true,
+        auto: true,
+        pause: 4000,
+        autoDirection: 'next',
+        autoHover: true
+      });
+    });
+  </script>
+  <!-- Поиск билетов -->
+  <section class="search-section  fade-in-title" id="poisk">
+    <form class="search-form"  method="POST">
+      <input class="test-0-fd" type="text" name="departure" placeholder="Откуда" required>
+      <input class="test-0-fa" type="text" name="destination" placeholder="Куда" required>
+      <input class="test-0-fdt" type="date" name="departureDate" placeholder="Туда" required>
+      <input class="test-0-fat" type="date" name="returnDate" placeholder="Обратно" required>
+      <select class="test-0-fnp" name="passengers" required>
+        <option value="" disabled selected>Количество пассажиров</option>
+        <option value="1">1 пассажир</option>
+        <option value="2">2 пассажира</option>
+        <option value="3">3 пассажира</option>
+        <option value="4">4 пассажира</option>
+        <option value="5">5 пассажиров</option>
+        <option value="6">6 пассажиров</option>
+        <option value="7">7 пассажиров</option>
+        <option value="8">8 пассажиров</option>
+      </select>
+      <button class="test-0-fbs" type="submit">Найти билеты</button>
+    </form>
+  </section>
+
+  <script>
+    function validateForm() {
+    var nameInput = document.getElementsByName('name')[0];
+    var emailInput = document.getElementsByName('email')[0];
+    var passwordInput = document.getElementsByName('password')[0];
+    
+    if (nameInput.value === '' || emailInput.value === '' || passwordInput.value === '') {
+      alert('Пожалуйста, заполните все поля.');
+      return false;
+    }
+    
+    return true;
+  }
+</script>
+
+
+  <!-- Акции -->
+  <section class="rest" id = "akzii">
+    <div class="sect-heading" >
+      <h1 class="sect-titlea">Акции</h1>
+    </div>
+    <div class="cards">
+      <a href="Pozd.html"  class="test-0-0  ">
+        <img src="media/images/promotions/promotion1.jpg" alt="Pozd" class="test-0-ai">
+        <div class="card-text">
+          <div class="test-0-an">
+            <h3 class="card-heading">Returning and Changing</h3>
+          </div>
+          <div class="card-info">
+            <div class="test-0-ad ">To see again the streets that witnessed so much. To hug your beloved ones and look back to see. And to think of new dreams that will be so special!</div>
+          </div>
+          <button class="test-0-abm" type="submit">Подробнее</button>
+        </div>
+      </a>
+
+      <a href="Pozd.html"  class="test-0-0  ">
+        <img src="media/images/promotions/promotion2.jpg" alt="Pozd" class="test-0-ai">
+        <div class="card-text">
+          <div class="test-0-an">
+            <h3 class="card-heading">Best offers</h3>
+          </div>
+          <div class="card-info">
+            <div class="test-0-ad ">The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+              Once all of this is over, we will continue exploring. 
+            </div>
+          </div>
+          <button class="test-0-abm" type="submit">Подробнее</button>
+        </div>
+      </a>
+
+       <a href="Pozd.html"  class="test-0-0  ">
+        <img src="media/images/promotions/promotion3.jpg" alt="Pozd" class="test-0-ai">
+        <div class="card-text">
+          <div class="test-0-an">
+            <h3 class="card-heading">See you more often</h3>
+          </div>
+          <div class="card-info">
+            <div class="test-0-ad ">Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+see your loved ones more often.</div>
+          </div>
+          <button class="test-0-abm" type="submit">Подробнее</button>
+        </div>
+      </a>
+    
+      <a href="Pozd.html"  class="test-0-0  ">
+        <img src="media/images/promotions/promotion4.jpg" alt="Pozd" class="test-0-ai">
+        <div class="card-text">
+          <div class="test-0-an">
+            <h3 class="card-heading">Everything is on again</h3>
+          </div>
+          <div class="card-info">
+            <div class="test-0-ad ">From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+a day daily.
+
+            </div>
+          </div>
+          <button class="test-0-abm" type="submit">Подробнее</button>
+        </div>
+      </a>
+
+      <div class="test-0-0  ">
+        <div class="card-text">
+          <div class="test-0-and">
+            <h3 class="card-heading">Подписка на акции</h3>
+          </div>
+          <div class="card-info">
+            <div class="test-0-sib">Скидки на авиабилеты и предложения Flightpool придут на вашу почту:</div>
+          </div>
+          <input type="email" id="emailInput" class="test-0-sie " placeholder="Email*">
+          <div class="checkbox-container">
+            <input type="checkbox" id="myCheckbox" class="" class="check">
+            <label for="myCheckbox" >Я согласшаюсь с условиями пользовательского согласшения</label>
+          </div>
+          <button class="test-0-sbs" type="submit">Подписаться</button>
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- Отзывы -->
+    <section class="rest" id = "otzivi">
+      <div class="sect-heading" >
+        <h1 class="sect-title">Отзывы о нашей компании</h1>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="media/картамышев.jpg" alt="Pozd" class="card-image">
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-heading">Незнакомец</h3>
+            </div>
+            <div class="card-info">
+              <div class="rating"><img src="Photo/zvezda.svg">4.9</div>
+              <div class="price">Прекрасная компания, великолепный сайт.</div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div  class="card">
+          <img src="media/синяев_отзыв.jpg" alt="Pozd" class="card-image">
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-heading">Елисей Синяев</h3>
+            </div>
+            <div class="card-info">
+              <div class="rating"><img src="Photo/zvezda.svg">5.0</div>
+              <div class="price">Моя любимая компания, каждый день летаю на ее рейсах в Ирак по работе, пока без проишествий.</div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div  class="card">
+          <img src="media/холмецов_отзыв.jpg" alt="Pozd" class="card-image">
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-heading">Антон Холмецов</h3>
+            </div>
+            <div class="card-info">
+              <div class="rating"><img src="Photo/zvezda.svg">2.5</div>
+              <div class="price">Ужасный сервис в самолетах, не качественное обслуживание. Увидел хороший сайт подумал тут профессионалы...</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div  class="card">
+          <img src="media/платонов_отзыв.jpg" alt="Pozd" class="card-image">
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-heading">Дмитрий Платонко</h3>
+            </div>
+            <div class="card-info">
+              <div class="rating"><img src="Photo/zvezda.svg">5.0</div>
+              <div class="price">Отлично</div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div  class="card">
+          <img src="media/поздянков_отзыв.jpg" alt="Pozd" class="card-image">
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-heading">Алексей Позняков</h3>
+            </div>
+            <div class="card-info">
+              <div class="rating"><img src="Photo/zvezda.svg">4.7</div>
+              <div class="price">Приветливые улыбчивые люди, все сделали дешево и без проишествий</div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div  class="card">
+          <img src="media/никто.jpg" alt="Pozd" class="card-image">
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-heading">Адольф Зеленский</h3>
+            </div>
+            <div class="card-info">
+              <div class="rating"><img src="Photo/zvezda.svg">4.0</div>
+              <div class="price">Норм</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+  <div class="container">
+   
+    <div class="  test-1-logo "> 
+        <img src="media/logo.png" alt="logo">
+      </div>
+      
+      <nav class="footer-nav">
+        <div class="ssilky">
+          <a href="index.html " class="footer-link">Home</a>
+          <a href="login.html " class="footer-link">Login</a>
+          <a href="register.html  " class="footer-link">Sign Up</a>
+          <a href="index.html " class="footer-link">Return</a>
+          <a href="index.html#akzii" class="footer-link">Feedback</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-contact">
+      <span class="footer-phone">Наш телефон: 8 (800) 100-10-10</span>
+   
+  </div>
+</footer>
+
+  </body>
+
+  </html>
